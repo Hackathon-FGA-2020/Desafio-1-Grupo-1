@@ -1,5 +1,7 @@
 {
   "name": "Hackathon-FGA-2020",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

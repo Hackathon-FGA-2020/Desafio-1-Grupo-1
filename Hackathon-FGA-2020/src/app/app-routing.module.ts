@@ -12,25 +12,18 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
+    path: 'registro',
+    loadChildren: () => import('./registro/registro.module').then( m => m.RegistroPageModule)
+  },
+  {
     path: 'login',
     loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
   },
   {
-    path: 'singin',
-    loadChildren: () => import('./singin/singin.module').then( m => m.SinginPageModule)
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
   },
-  {
-    path: 'singup',
-    loadChildren: () => import('./singup/singup.module').then( m => m.SingupPageModule)
-  },
-  {
-    path: 'autenticacao',
-    loadChildren: () => import('./autenticacao/autenticacao.module').then( m => m.AutenticacaoPageModule)
-  },
-  {
-    path: 'user',
-    loadChildren: () => import('./user/user.module').then( m => m.UserPageModule)
-  },
+
 ];
 
 @NgModule({

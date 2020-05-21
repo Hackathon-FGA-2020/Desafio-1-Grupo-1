@@ -1,0 +1,27 @@
+<style>
+  :root {
+    --ion-safe-area-top: 20px;
+    --ion-safe-area-bottom: 22px;
+  }
+</style>
+<ion-app>
+  <ion-header [translucent]="true">
+    <ion-toolbar>
+      <ion-title>
+        Página Registro
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content fullscreen>
+    <ion-header collapse="condense">
+      <ion-toolbar>
+        <ion-title size="medium">Página de Registro</ion-title>
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-input placeholder="E-mail" [(ngModel)]="user.email"></ion-input>
+    <ion-input type="password" placeholder="Senha" [(ngModel)]="user.password"></ion-input>
+    <ion-input type="password" placeholder="Confirme Senha" [(ngModel)]="user.password"></ion-input>
+
+
