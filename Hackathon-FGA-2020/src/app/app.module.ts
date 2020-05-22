@@ -1,3 +1,4 @@
+import { HomePage } from './home/home.page';
 import { environment } from './../environments/environment';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -15,32 +16,21 @@ import { AngularFireAuthModule } from 'angularfire2/auth'
 import { NavController, NavParams } from '@ionic/angular';
 import { AngularFireAuth } from "@angular/fire/auth";
 
-
-
-const firebaseConfig = {
-  apiKey: "AIzaSyBPPJZeqIozh5OkdhMBY28fxYa07n2CQYs",
-  authDomain: "hackathon-fga-2020.firebaseapp.com",
-  databaseURL: "https://hackathon-fga-2020.firebaseio.com",
-  projectId: "hackathon-fga-2020",
-  storageBucket: "hackathon-fga-2020.appspot.com",
-  messagingSenderId: "472112039252",
-  appId: "1:472112039252:web:50c4c7675daa225e33b4c1",
-  measurementId: "G-67D2KMBS01"
-};
-
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, HomePage],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule,
-    AngularFireModule.initializeApp(firebaseConfig),
     AngularFireAuthModule,
     AngularFireAuth
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
+    AuthService,
+    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy,
+        AngularFireModule, AngularFireAuth }
   ],
   bootstrap: [AppComponent]
+
 })
 export class AppModule {}
