@@ -1,8 +1,0 @@
-{
-  "name": "Teste_google",
-  "integrations": {
-    "capacitor": {},
-    "cordova": {}
-  },
-  "type": "angular"
-}
