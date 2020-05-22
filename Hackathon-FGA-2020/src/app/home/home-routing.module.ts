@@ -6,7 +6,11 @@ const routes: Routes = [
   {
     path: '',
     component: HomePage,
-  }
+  },
+  {
+    path: 'menu',
+    loadChildren: () => import('../localizacao/home.module').then(m => m.HomePageModule)
+  },
 ];
 
 @NgModule({
