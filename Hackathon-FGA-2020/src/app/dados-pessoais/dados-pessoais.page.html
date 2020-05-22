@@ -1,0 +1,56 @@
+
+  
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Dados Pessoais</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content fullscreen>
+    <ion-list>
+      <ion-item>
+        <ion-label text-wrap>
+          <h4>Idade? <ion-text color="danger">*</ion-text></h4>
+        </ion-label>
+        <ion-select interface="popover">
+          <ion-select-option value="Jovem">Até 16 anos</ion-select-option>
+          <ion-select-option value="Jovem adulto">17 anos - 27 anos</ion-select-option>
+          <ion-select-option value="Adulto">28 anos - 59 anos</ion-select-option>
+          <ion-select-option value="Idoso">A partir de 60 anos</ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-label text-wrap>
+          <h4>Renda familiar? <ion-text color="danger">*</ion-text></h4>
+        </ion-label>
+        <ion-select interface="popover">
+          <ion-select-option value="Classe E">Até R$1.254</ion-select-option>
+          <ion-select-option value="Classe D">R$1.255 - R$2.004</ion-select-option>
+          <ion-select-option value="Classe C">R$2.005 - R$8.640</ion-select-option>
+          <ion-select-option value="Classe B">R$8.641 - R$11.261</ion-select-option>
+          <ion-select-option value="Classe A">A partir de 11.262 reais</ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-label text-wrap>
+          <h4>Qual o seu sexo? <ion-text color="danger">*</ion-text></h4>
+        </ion-label>
+        <ion-select interface="popover">
+          <ion-select-option value="Masc">Masculino</ion-select-option>
+          <ion-select-option value="Fem">Feminino</ion-select-option>
+          <ion-select-option value="IDK">Prefiro não informar</ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Para fins de feedback<h2>(Email ou Whatsapp)</h2></ion-label>
+        <ion-input required type="text"></ion-input>
+      </ion-item>
+
+      <section>
+        <ion-button size="small" color="medium" href="sintomas">Próximo</ion-button>
+      </section>
+    </ion-list>
+  </ion-content>

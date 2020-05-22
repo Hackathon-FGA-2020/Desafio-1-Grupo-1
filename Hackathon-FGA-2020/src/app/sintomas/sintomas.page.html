@@ -1,0 +1,147 @@
+<style>
+  :root {
+    --ion-safe-area-top: 20px;
+    --ion-safe-area-bottom: 22px;
+       }
+  h4 {
+    font-size: 0.8rem;
+      }
+</style>
+<ion-app>
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Sintomas</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content fullscreen>
+    <ion-list>
+      <ion-item>
+        <ion-label text-wrap><h4>Está com febre? <ion-text color="danger">*</ion-text></h4>
+        </ion-label>
+        <ion-select interface="popover" (ionChange)="OnChange($event,1)">
+          <ion-select-option value="5">Sim</ion-select-option>
+          <ion-select-option value="0">Não </ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-label text-wrap><h4>Está com tosse seca? <ion-text color="danger">*</ion-text></h4>
+        </ion-label>
+        <ion-select interface="popover" (ionChange)="OnChange($event,2)">
+          <ion-select-option value="3">Sim</ion-select-option>
+          <ion-select-option value="0">Não </ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-label text-wrap><h4>Está com dor/irritação de garganta? <ion-text color="danger">*</ion-text></h4>
+        </ion-label>
+        <ion-select interface="popover" (ionChange)="OnChange($event,3)">
+          <ion-select-option value="1">Sim</ion-select-option>
+          <ion-select-option value="0">Não </ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-label text-wrap><h4>Está com dor de cabeça? <ion-text color="danger">*</ion-text></h4>
+        </ion-label>
+        <ion-select interface="popover" (ionChange)="OnChange($event,4)">
+          <ion-select-option value="1">Sim</ion-select-option>
+          <ion-select-option value="0">Não </ion-select-option>
+        </ion-select>
+      </ion-item>
+
+
+      <ion-item>
+        <ion-label text-wrap><h4>Está com dificuldade para respirar? <ion-text color="danger">*</ion-text></h4>
+        </ion-label>
+        <ion-select interface="popover" (ionChange)="OnChange($event,5)">
+          <ion-select-option value="10">Sim</ion-select-option>
+          <ion-select-option value="0">Não </ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-label text-wrap><h4>Ausência de paladar? <ion-text color="danger">*</ion-text></h4>
+        </ion-label>
+        <ion-select interface="popover" (ionChange)="OnChange($event,6)">
+          <ion-select-option value="2">Sim</ion-select-option>
+          <ion-select-option value="0">Não </ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-label text-wrap><h4>Ausência de olfato? <ion-text color="danger">*</ion-text></h4>
+        </ion-label>
+        <ion-select interface="popover" (ionChange)="OnChange($event,7)">
+          <ion-select-option value="2">Sim</ion-select-option>
+          <ion-select-option value="0">Não </ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-label text-wrap><h4>Está com secreção nasal ou espirros? <ion-text color="danger">*</ion-text></h4>
+        </ion-label>
+        <ion-select interface="popover" (ionChange)="OnChange($event,8)">
+          <ion-select-option value="1">Sim</ion-select-option>
+          <ion-select-option value="0">Não </ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-label text-wrap><h4>Está com dores no corpo? <ion-text color="danger">*</ion-text></h4>
+        </ion-label>
+        <ion-select interface="popover" (ionChange)="OnChange($event,9)">
+          <ion-select-option value="1">Sim</ion-select-option>
+          <ion-select-option value="0">Não </ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-label text-wrap><h4>Está com diarreia?<ion-text color="danger">*</ion-text></h4>
+        </ion-label>
+        <ion-select interface="popover" (ionChange)="OnChange($event,10)">
+          <ion-select-option value="1">Sim</ion-select-option>
+          <ion-select-option value="0">Não </ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item >
+        <ion-label text-wrap>
+          <h4> Viajou nos últimos 14 dias, para algum local com casos confirmados de COVID-19?<ion-text color="danger">*</ion-text></h4>
+        </ion-label>
+        <ion-select interface="popover" (ionChange)="OnChange($event,11)">
+          <ion-select-option value="3">Sim</ion-select-option>
+          <ion-select-option value="0">Não </ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item >
+        <ion-label text-wrap>
+          <h4> Esteve em cotato, nos últimos 14 dias, com um caso diagnosticado com COVID-19?<ion-text color="danger">*</ion-text></h4>
+        </ion-label>
+        <ion-select interface="popover" (ionChange)="OnChange($event,12)">
+          <ion-select-option value="10">Sim</ion-select-option>
+          <ion-select-option value="0">Não </ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item >
+        <ion-label text-wrap>
+          <h4>Possui alguma doença crônica?<ion-text color="danger">*</ion-text></h4>
+        </ion-label>
+        <ion-select interface="popover" (ionChange)="OnChange($event,13)">
+          <ion-select-option value="1">Sim</ion-select-option>
+          <ion-select-option value="-1">Não </ion-select-option>
+        </ion-select>
+      </ion-item>
+
+    <section>
+      <ion-button size="small" color="medium" (click)="redirect()">Resultado</ion-button>
+    </section> 
+      
+
+    </ion-list>
+  </ion-content>
+</ion-app>
