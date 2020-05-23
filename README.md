@@ -15,6 +15,8 @@ June Dalziel Almeida (Glasgow, 5 de outubro de 1930 - Bexhill, 1 de dezembro de 
 
 Nos inspirandos nesse grande feito, tentamos com pouco conhecimento ajudar de alguma maneira os moradores do Distrito Federal.
 
+# Link para o vídeo de apresentação
+https://youtu.be/VZj-p6-onM8
 
 # Tutorial
 
