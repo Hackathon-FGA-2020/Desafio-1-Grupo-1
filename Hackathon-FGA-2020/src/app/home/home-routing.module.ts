@@ -6,14 +6,11 @@ const routes: Routes = [
   {
     path: '',
     component: HomePage,
-    children:[
-      {
-        path: 'dados-pessoais',
-        loadChildren: () => import('../dados-pessoais/dados-pessoais.module').then( m => m.DadosPessoaisPageModule)
-      }      
-
-    ]
-  }
+  },
+  {
+    path: 'menu',
+    loadChildren: () => import('../menu/menu.module').then(m => m.MenuPageModule)
+  },
 ];
 
 @NgModule({
