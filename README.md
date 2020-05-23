@@ -41,3 +41,34 @@ Ao permitir que o app tenha acesso à sua localização atual, o usuário recebe
 
 ## Pontos de testagem próximos:
 Com a autorização do usuário, o app receberá sua localização e irá listar os pontos de testagem rápida para o COVID-19 na região em que o usuário se encontra.
+
+
+# Updates futuros 
+
+* Criar cadastro de usuário para poder validar o resultado de testagem;
+
+* Utilizar localização atual para determinar unidades de saúde mais próximas;
+
+* Mostrar dados atualizados diariamente;
+
+* Criar conexão com profissionais de saúde que estão afastados por pertencerem ao grupo de risco para tirar dúvidas sobre os sintomas;
+
+* Expandir função de triagem para outras doenças;
+
+
+# Modo de Execução do Aplicativo
+
+Passo 01: Clonar o repositório do projeto.
+
+Passo 02: Instalar framework do IONIC:
+    $ npm install -g ionic cordova
+
+Passo 03: Instalar dependencias:
+    $ npm i
+
+Passo 04: Entrar na pasta local e iniciar o servidor:
+    $ionic serve -l
+
+Esse comando dará a opção de simular o ambiente de funcionamento.
+
+
