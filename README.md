@@ -73,3 +73,6 @@ Passo 04: Entrar na pasta local e iniciar o servidor: $ionic serve -l .
 Esse comando dará a opção de simular o ambiente de funcionamento.
 
 
+# Por motivos de falha técnica, o projeto acabou ficando na branch "Teste" dentro da pasta Hackaton_2020_Fga
+
+
