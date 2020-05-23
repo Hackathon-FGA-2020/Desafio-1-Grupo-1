@@ -23,6 +23,30 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'positivo',
+    loadChildren: () => import('./avisos/positivo/positivo.module').then( m => m.PositivoPageModule)
+  },
+  {
+    path: 'positivo',
+    loadChildren: () => import('./avisos./positivo/positivo.module').then( m => m.PositivoPageModule)
+  },
+  {
+    path: 'avisos',
+    loadChildren: () => import('./avisos/avisos.module').then( m => m.AvisosPageModule)
+  },
+  {
+    path: 'avisopositivo',
+    loadChildren: () => import('./avisopositivo/avisopositivo.module').then( m => m.AvisopositivoPageModule)
+  },
+  {
+    path: 'avisonegativo',
+    loadChildren: () => import('./avisonegativo/avisonegativo.module').then( m => m.AvisonegativoPageModule)
+  },
+  {
+    path: 'avisoseguranca',
+    loadChildren: () => import('./avisoseguranca/avisoseguranca.module').then( m => m.AvisosegurancaPageModule)
+  },
 ];
 
 @NgModule({
