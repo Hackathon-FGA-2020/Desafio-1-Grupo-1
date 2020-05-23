@@ -1,26 +1,98 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title small>
-      Seja Bem Vindo!
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+<style>
+  :root {
+    --ion-safe-area-top: 15px;
+    --ion-safe-area-bottom: 20px;
+  }
+  h2 {
+    font-size: 1rem;
+    text-align: center;
+     }
+  h4 {
+    font-size: 0.8rem;
+    text-align: center;
+    }
+</style>
+<body>
+<ion-app>
+
+  <ion-header>
     <ion-toolbar>
-      <ion-title size="small"> Seja Bem Vindo!</ion-title>
+      <ion-title><h4>Postos de Testagem</h4></ion-title>
     </ion-toolbar>
   </ion-header>
 
+  <ion-content fullscreen>
+
+    <section class="full-width">
+      <ion-text color="danger">
+        <h4>É necessário fazer um agendamente no site para realizar a testagem. O atendimento está sendo feito das 8h às 17h. Para realizar o agendamento:<a href="https://sistemas.df.gov.br/mteste/" ng-click="acessar()">Clique aqui!</a></h4>
+      </ion-text>
+    
+      <label><h2 text-wrap>Moradores de Águas Claras, Taguatinga, Vicente Pires e Arniqueiras</h2></label>
+      <ion-button expand="block" color="success" 
+      href="https://www.google.com/maps/search/?api=1&query=-15.831795,-48.037011,17&query_place_id=ChIJ_TkDHF8yWpMR7KsbgvF_ChE" appExternalUrl>
+      Unieuro Centro Universitario</ion-button>
+      
+      <ion-button expand="block" color="success" 
+      href="https://www.google.com/maps/search/?api=1&query=-15.837529,-48.026353,17&query_place_id=ChIJq1-dkwcwWpMRqDvepmUtQJo" appExternalUrl>
+      UNIPLAN</ion-button>
+
+      <ion-button expand="block" color="success" 
+      href="https://www.google.com/maps/search/?api=1&query=-15.828040,-48.025672,17&query_place_id=ChIJCT2CVkEyWpMR7xXmTNK_SCo" appExternalUrl>
+      Residência Oficial de Águas Claras</ion-button>
+
+
+
+      <label><h2 text-wrap>Moradores das asas Sul e Norte, Sudoeste, Noroeste, Cruzeiro/Octogonal</h2></label>
+      <ion-button expand="block" color="success" 
+      href="https://www.google.com/maps/search/?api=1&query=-15.804025,-47.919395,17&query_place_id=ChIJWWl_CwwwWpMRMyMFVMzgCQw" appExternalUrl>
+      Parque da Cidade – Estacionamento 4</ion-button>
+
+      <ion-button expand="block" color="success" 
+      href="https://www.google.com/maps/search/?api=1&query=-15.783380,-47.899222,17&query_place_id=ChIJN1m37vU6WpMRWwejOaKabv0" appExternalUrl>
+      Estádio Mané Garrincha</ion-button>
+
+
+      
+      
+      <label><h2 text-wrap>Moradores do Lago Sul, São Sebastião, Itapoã, Paranoá, Jardim Botânico e Jardins Mangueiral:</h2></label>
+      <ion-button expand="block" color="success" 
+      href="https://www.google.com/maps/search/?api=1&query=-15.843562,-47.879966,17&query_place_id=ChIJoVVPYh0lWpMRmUBtdfOHdDY" appExternalUrl>
+      Paróquia São Pedro de Alcântara</ion-button>
+    
+
+
+
+      <label><h2 text-wrap>Moradores do Lago Norte, Varjão e Granja do Torto</h2></label>
+      <ion-button expand="block" color="success" 
+      href="https://www.google.com/maps/search/?api=1&query=-15.720925,-47.885921,17&query_place_id=ChIJ9Y8QHpswWpMRzohd-1XpYt0" appExternalUrl>
+      Iguatemi Shopping</ion-button>
+
+
+
+
+      <label><h2 text-wrap>Moradores do Guará, Núcleo Bandeirante, Candangolândia e Park Sul</h2></label>
+      <ion-button expand="block" color="success" 
+      href="https://www.google.com/maps/search/?api=1&query=-15.833486,-47.955316,17&query_place_id=ChIJt2it6ikwWpMRzJOFvFVXmMQ" appExternalUrl>
+      ParkShopping</ion-button>
+
   
-  <div id="container">
-    <strong>Em homenagem a June Dalziel Almeida </strong>
-    <section>
-        <ion-button size="medium">Menu</ion-button>
+
+      <label><h2 text-wrap>Moradores de Ceilândia, Por do Sol e Sol Nascente</h2></label>
+      <ion-button expand="block" color="success" 
+      href="https://www.google.com/maps/search/?api=1&query=-15.809954,-48.125292,17&query_place_id=ChIJ6UKJumTMW5MRkFi6_4gDZHk" appExternalUrl>
+      IESB Unidade Ceilândia</ion-button>
+
+
+
+      <label><h2 text-wrap>Moradores de Sobradinho I, II, Fercal e Planaltina</h2></label>
+      <ion-button expand="block" color="success" 
+      href="https://www.google.com/maps/search/?api=1&query=-15.641685,-47.787856,17&query_place_id=ChIJR0lGXZZBWpMR2mSoMVndeIg" appExternalUrl>
+      SESI Sobradinho</ion-button>
+
 
     </section>
-  </div>
-  
-  
-</ion-content>
+  </ion-content>
+</ion-app>
+</body>
