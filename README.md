@@ -47,23 +47,23 @@ Com a autorização do usuário, o app receberá sua localização e irá listar
 
 * Criar cadastro de usuário para poder validar o resultado de testagem;
 
-* Utilizar localização atual para determinar unidades de saúde mais próximas;
+* Utilizar localização atual do usuário para determinar unidades de saúde mais próximas;
 
-* Mostrar dados atualizados diariamente;
+* Mostrar dados atualizados sobre o COVID-19 diariamente;
 
-* Criar conexão com profissionais de saúde que estão afastados por pertencerem ao grupo de risco para tirar dúvidas sobre os sintomas;
+* Criar conexão com profissionais de saúde que estão afastados, por pertencerem ao grupo de risco, para tirar dúvidas sobre os sintomas;
 
-* Expandir função de triagem para outras doenças;
+* Expandir função de triagem virtual para outras doenças;
 
 
 # Modo de Execução do Aplicativo
 
 Passo 01: Clonar o repositório do projeto.
 
-Passo 02: Instalar framework do IONIC:
-    $ npm install -g ionic cordova
+Passo 02: Instalar o framework IONIC:
+     $ npm install -g ionic cordova
 
-Passo 03: Instalar dependencias:
+Passo 03: Instalar dependências:
     $ npm i
 
 Passo 04: Entrar na pasta local e iniciar o servidor:
