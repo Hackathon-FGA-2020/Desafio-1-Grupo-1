@@ -45,6 +45,8 @@ Com a autorização do usuário, o app receberá sua localização e irá listar
 
 # Updates futuros 
 
+Se possível, gostaríamos de implementar as seguintes atualizações:
+
 * Criar cadastro de usuário para poder validar o resultado de testagem;
 
 * Utilizar localização atual do usuário para determinar unidades de saúde mais próximas;
